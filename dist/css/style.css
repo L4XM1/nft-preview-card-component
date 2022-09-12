@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("../assets/fonts/Outfit-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../assets/fonts/Outfit-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../assets/fonts/Outfit-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  min-height: 100vh;
+  padding: 25px;
+  background-color: #0d192b;
+  padding: 60px 25px 0 25px;
+}
+
+img {
+  display: block;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #8bacda;
+  margin-top: 15px;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    padding: 150px 0px;
+  }
+
+  .attribution {
+    position: fixed;
+    left: 50%;
+    bottom: 2%;
+    transform: translate(-50%);
+  }
+}
+.card {
+  max-width: 375px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 25px 23px 23px 23px;
+  background-color: #14253d;
+  font-family: "Outfit", sans-serif;
+}
+.card__img-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+.card__first-img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.card__img-overlay {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+  background: rgba(0, 255, 247, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.card__title {
+  font-weight: bold;
+  color: white;
+  font-size: 22px;
+}
+.card__text {
+  margin-top: 14px;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 300;
+  color: #8bacda;
+}
+.card__status {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #2f415b;
+}
+.card__status--price, .card__status--countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.card__price {
+  color: #00fff7;
+  margin-left: 7px;
+}
+.card__countdown {
+  color: #8bacda;
+  margin-left: 7px;
+}
+.card__footer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 300;
+  font-size: 15.5px;
+}
+.card__avatar {
+  width: 33px;
+  margin-right: 15px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.card__author {
+  color: #8bacda;
+}
+.card__author__name {
+  color: white;
+}
+
+@media only screen and (min-width: 1440px) {
+  .card {
+    max-width: 350px;
+    padding-bottom: 30px;
+  }
+  .card__img-overlay:hover {
+    opacity: 1;
+  }
+  .card__title:hover {
+    cursor: pointer;
+    color: #00fff7;
+  }
+  .card__text {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+  .card__status--price, .card__status--countdown {
+    margin-bottom: 22px;
+    font-size: 16.5px;
+  }
+  .card__footer {
+    margin-top: 15px;
+    font-size: 16px;
+    word-spacing: 2px;
+  }
+  .card__author__name:hover {
+    cursor: pointer;
+    color: #00fff7;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
