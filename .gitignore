@@ -16,3 +16,12 @@
 .prettierignore
 
 node_modules
+design
+sass
+*json
+*md
+assets
+css
+index.html
+
+
