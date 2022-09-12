@@ -1,0 +1,46 @@
+@use "variables" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    min-height: 100vh;
+    padding: 25px;
+    background-color: $main-bg-color;
+    padding: 60px 25px 0 25px;
+}
+
+img {
+    display: block;
+}
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: $text-color;
+    margin-top: 15px;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        padding: 150px 0px;
+    }
+
+    .attribution {
+        position: fixed;
+        left: 50%;
+        bottom: 2%;
+        transform: translate(-50%);
+    }
+}
